@@ -18,6 +18,6 @@ You will work with stateful and stateless functional React components using hook
 
 # Setup Instructions
 
-If you choose to do this project on your computer instead of Codecademy, you can download what you’ll need by clicking the “Download” button below. You’ll need to open and work in **main.js** in a text editor. To edit **main.js**, use your text editor of choice. If you need a recommendation or help to install an editor, we recommend looking into our [article about setting up a text editor for web development](https://www.codecademy.com/articles/visual-studio-code) (Follow along until you get to the section: “Practice: Let’s Make a Project”). To run **main.js** on your computer, you will need to install Node.js. If you need help installing Node.js, read our [article on installing Node](https://www.codecademy.com/articles/setting-up-node-locally).
+If you choose to do this project on your computer instead of Codecademy, you can download what you’ll need by clicking the “Download” button below. Make sure you have [Node installed on your computer](https://www.codecademy.com/articles/setting-up-node-locally), and then, inside the project’s root directory, run `npm install`. Finally, run `npm start`, which will automatically open up a new tab in your browser with your running application. If a new tab does not appear, you can visit [http://localhost:3000/](http://localhost:3000/).
 
 [DOWNLOAD](https://static-assets.codecademy.com/Courses/react/projects/appointment-planner-starting-v18.zip)
