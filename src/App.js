@@ -10,7 +10,7 @@ function App() {
   contacts and appointments 
   */
   const [contacts, setContacts] = useState([]);
-
+  const [appointments, setAppointments] = useState([]);
 
   /*
   Implement functions to add data to
