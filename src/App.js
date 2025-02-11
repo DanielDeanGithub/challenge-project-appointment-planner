@@ -16,6 +16,13 @@ function App() {
   Implement functions to add data to
   contacts and appointments
   */
+  const addContact = (name, phone, email) => {
+    // Create new contact object
+    const newContact = { name, phone, email };
+    
+    // Update contacts state
+    setContacts([...contacts, newContact]);
+  }
 
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={ <Root/> }>
