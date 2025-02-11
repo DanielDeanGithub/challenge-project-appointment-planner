@@ -24,6 +24,14 @@ function App() {
     setContacts([...contacts, newContact]);
   }
 
+  const addAppointment = (name, contact, date, time) => {
+    // Create new appointment object
+    const newAppointment = { name, contact, date, time };
+    
+    // Update appointments state
+    setContacts([...appointments, newAppointment]);
+  }
+
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={ <Root/> }>
       <Route index element={ <Navigate to={ROUTES.CONTACTS} replace/> }/>
