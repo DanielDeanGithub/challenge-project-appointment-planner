@@ -25,7 +25,11 @@ export const ContactsPage = ({ contacts, addContact }) => {
   Using hooks, check for contact name in the 
   contacts array variable in props
   */
-
+  useEffect(()=> {
+    const nameMatch = contacts.some(contact => contact.name === name);
+    setDuplicate(nameMatch);
+  },[name, contacts]);
+  
   return (
     <div>
       <section>
