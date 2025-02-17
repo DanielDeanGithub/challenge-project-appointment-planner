@@ -29,6 +29,15 @@ export const ContactForm = ({
         pattern="^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$"
         required
       />
+      
+      <label htmlFor="email">Email:</label>
+      <input
+        id="email"
+        type="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+      />
 
     </form>
   );
