@@ -39,6 +39,7 @@ export const ContactForm = ({
         required
       />
 
+      <button type="submit">Add Contact</button>
     </form>
   );
 };
