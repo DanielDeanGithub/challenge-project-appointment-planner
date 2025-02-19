@@ -39,7 +39,7 @@ function App() {
         <ContactsPage  contacts={contacts} addContact={addContact} /> /* Add props to ContactsPage */ 
       }/>
       <Route path={ROUTES.APPOINTMENTS} element={ 
-        <AppointmentsPage appointments={appointments} addAppointment={addAppointment} /> /* Add props to AppointmentsPage */ 
+        <AppointmentsPage appointments={appointments} contacts={contacts} addAppointment={addAppointment} /> /* Add props to AppointmentsPage */ 
       }/>
     </Route>
   ));
