@@ -8,9 +8,8 @@ const getTodayString = () => {
 };
 
 export const AppointmentForm = ({
-  contacts,
-  title,
-  setTitle,
+  name,
+  setName,
   contact,
   setContact,
   date,
@@ -22,7 +21,11 @@ export const AppointmentForm = ({
 
   return (
     <form onSubmit={handleSubmit}>
-
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
     </form>
   );
 };
