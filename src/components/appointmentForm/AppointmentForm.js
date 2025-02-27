@@ -26,6 +26,11 @@ export const AppointmentForm = ({
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
+      <input
+        type="date"
+        value={date}
+        onChange={(e) => setDate(e.target.value)}
+      />
     </form>
   );
 };
