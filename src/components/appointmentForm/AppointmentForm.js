@@ -12,12 +12,12 @@ const getTodayString = () => {
 export const AppointmentForm = ({
   name,
   setName,
-  contact,
-  setContact,
   date,
   setDate,
   time,
   setTime,
+  contacts,
+  setContacts,
   handleSubmit
 }) => {
 
@@ -38,6 +38,7 @@ export const AppointmentForm = ({
         value={time}
         onChange={(e) => setTime(e.target.value)}
       />
+
     </form>
   );
 };
