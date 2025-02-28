@@ -1,5 +1,7 @@
 import React from "react";
 
+import { ContactPicker } from "../contactPicker/ContactPicker";
+
 const getTodayString = () => {
   const [month, day, year] = new Date()
     .toLocaleDateString("en-US")
