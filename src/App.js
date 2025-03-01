@@ -29,7 +29,7 @@ function App() {
     const newAppointment = { name, contact, date, time };
     
     // Update appointments state
-    setContacts([...appointments, newAppointment]);
+    setAppointments([...appointments, newAppointment]);
   }
 
   const router = createBrowserRouter(createRoutesFromElements(
