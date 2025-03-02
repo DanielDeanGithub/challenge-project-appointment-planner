@@ -35,7 +35,7 @@ export const ContactsPage = ({ contacts, addContact }) => {
     const nameMatch = contacts.some(contact => contact.name === name);
     setDuplicate(nameMatch);
   },[name, contacts]);
-  
+
   return (
     <div>
       <section>

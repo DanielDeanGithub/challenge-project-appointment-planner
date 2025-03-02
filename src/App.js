@@ -21,7 +21,7 @@ function App() {
     const newContact = { name, phone, email };
     
     // Update contacts state
-    setContacts([...contacts, newContact]);
+    setContacts((previousContactList) => [...previousContactList, newContact]);
   }
 
   const addAppointment = (name, contact, date, time) => {
@@ -29,7 +29,7 @@ function App() {
     const newAppointment = { name, contact, date, time };
     
     // Update appointments state
-    setAppointments([...appointments, newAppointment]);
+    setAppointments((previousAppointmentList) => [...previousAppointmentList, newAppointment]);
   }
 
   const router = createBrowserRouter(createRoutesFromElements(
