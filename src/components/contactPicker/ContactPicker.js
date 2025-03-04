@@ -7,6 +7,6 @@ export const ContactPicker = ({
   name
 }) => {
   return (
-    <></>
+    <select onChange={onChange} value={value} name={name}></select>
   );
 };
