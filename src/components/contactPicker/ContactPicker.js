@@ -9,6 +9,9 @@ export const ContactPicker = ({
   return (
     <select onChange={onChange} value={value} name={name}>
       <option value="" default>No Contact Selected</option>
+      {
+        contacts.map((contact,index) => <option key={index} value={contact.name}>{contact.name}</option>)
+      }
     </select>
   );
 };
