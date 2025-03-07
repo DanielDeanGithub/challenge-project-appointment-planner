@@ -16,21 +16,8 @@ function App() {
   Implement functions to add data to
   contacts and appointments
   */
-  const addContact = (name, phone, email) => {
-    // Create new contact object
-    const newContact = { name, phone, email };
-    
-    // Update contacts state
-    setContacts((previousContactList) => [...previousContactList, newContact]);
-  }
-
-  const addAppointment = (name, contact, date, time) => {
-    // Create new appointment object
-    const newAppointment = { name, contact, date, time };
-    
-    // Update appointments state
-    setAppointments((previousAppointmentList) => [...previousAppointmentList, newAppointment]);
-  }
+  const addContact = (name, phone, email) => setContacts([...contacts, {name: name, phone: phone, email: email}]);
+  const addAppointment = (name, contact, date, time) => setAppointments([...appointments, {name: name, contact: contact, date: date, time: time}]);
 
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={ <Root/> }>
